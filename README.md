@@ -1,3 +1,67 @@
+# Kaizen Tecnology Case
+
+# İçindekiler
+
+1. [Proje nasıl github'tan klonlanır?](#proje-klonlama)
+2. [Proje'ye npm paketleri nasıl yüklenir?](#npm-paketleri)
+3. [Proje nasıl çalıştırılır](#nasıl-çalışır)
+4. [Get istekleri nasıl yapıldı](#Get-istekleri)
+
+# proje klonlama
+
+Terminal açılıp dizine 
+git clone https://github.com/felataslan/KaizenTecnologyCase.git komutunu yazarsanız projeyi kendi bilgisayarınıza klonlamış olursunuz.
+
+# npm paketleri
+
+proje github'tan klonlanırken npm paketleri indirilmediği için proje çalıştırılması için npm paketlerinin yüklenmesi gereklidir.
+
+npm i komutu terminalde çalıştırılmalıdır.
+
+# nasıl çalışır
+
+ilk iki adım gerçekleştirildikten sonra npm start komutu çalıştırılarak proje çalışıtırılabilir.
+
+# Get istekleri
+
+
+
+   Icon list Get isteği
+     axios.get('https://api.extrazone.com/tags/list', {
+            headers: {
+                'X-Country-Id': 'TR',
+                'X-Language-Id': 'TR'
+            }
+
+        }) 
+
+
+
+Carouseldeki promosyon ürünlerinin listelenmesini sağlayan get isteği
+ axios.get('https://api.extrazone.com/promotions/list?Channel=PWA',{
+            headers: {
+                'X-Country-Id': 'TR',
+                'X-Language-Id': 'TR'
+              }
+
+        })
+
+
+
+
+     Promosyon tekil sayfasına get isteği
+      axios.get(`https://api.extrazone.com/promotions?Id=${productId}`, {
+            headers: {
+                'X-Country-Id': 'TR',
+                'X-Language-Id': 'TR'
+            }
+
+        })       
+
+
+    
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
