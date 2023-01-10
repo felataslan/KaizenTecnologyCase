@@ -1,0 +1,43 @@
+.menu {
+    ul {
+        list-style-type: none;
+        display: inline-flex;
+
+        li {
+            color: white;
+            #login{
+                position: absolute;
+                left: 85%;
+                height: 20px;
+                border-radius: 10px;
+            }
+        }
+        .icon{
+            position: absolute;
+            left: 95%;
+            width: 40px;
+            height:40px;
+            top: 10px;
+            background-image: url('../image/Profile.svg');
+            background-size: cover;
+            cursor: pointer;
+            background-color: black;
+            border-radius: 20px;
+        }
+
+    }
+}
+.navbar{
+    position: relative;
+    ul{
+        list-style-type: none;
+        padding-left: 30px;
+        display: inline-flex;
+        li{
+            margin-left: 6px;
+        }
+        #search{
+            width: 20px;
+        }
+    }
+}
