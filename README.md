@@ -27,7 +27,9 @@ ilk iki adım gerçekleştirildikten sonra npm start komutu çalıştırılarak 
 
 
    Icon list Get isteği
-     axios.get('https://api.extrazone.com/tags/list', {
+   
+     axios.get('https://api.extrazone.com/tags/list', 
+     {
             headers: {
                 'X-Country-Id': 'TR',
                 'X-Language-Id': 'TR'
@@ -38,7 +40,9 @@ ilk iki adım gerçekleştirildikten sonra npm start komutu çalıştırılarak 
 
 
 Carouseldeki promosyon ürünlerinin listelenmesini sağlayan get isteği
- axios.get('https://api.extrazone.com/promotions/list?Channel=PWA',{
+
+ axios.get('https://api.extrazone.com/promotions/list?Channel=PWA',
+ {
             headers: {
                 'X-Country-Id': 'TR',
                 'X-Language-Id': 'TR'
@@ -50,7 +54,9 @@ Carouseldeki promosyon ürünlerinin listelenmesini sağlayan get isteği
 
 
      Promosyon tekil sayfasına get isteği
-      axios.get(`https://api.extrazone.com/promotions?Id=${productId}`, {
+     
+      axios.get(`https://api.extrazone.com/promotions?Id=${productId}`, 
+      {
             headers: {
                 'X-Country-Id': 'TR',
                 'X-Language-Id': 'TR'
